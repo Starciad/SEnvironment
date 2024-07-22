@@ -6,6 +6,9 @@ echo "Atualizando sistema..."
 sudo apt update
 sudo apt upgrade -y
 
+sudo apt-get update
+sudo apt-get upgrade -y
+
 # Drivers
 sudo ubuntu-drivers devices
 sudo ubuntu-drivers autoinstall

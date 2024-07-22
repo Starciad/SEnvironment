@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd ~
 echo "Iniciando a configuração do ambiente Linux..."
 
 # =================================== #
