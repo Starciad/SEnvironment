@@ -2,11 +2,19 @@
 
 echo "Instalando ferramentas de desenvolvimento..."
 
-# Atualiza o índice de pacotes
-sudo apt update
+# Tools
+sudo apt install -y build-essential cmake git default-jdk libssl-dev exuberant-ctags ncurses-term ack-grep silversearcher-ag fontconfig imagemagick libmagickwand-dev software-properties-common vim-gtk3 curl libpq-dev libgmp3-dev python3-virtualenv python3-dev libpq-dev
 
-# Instala ferramentas de desenvolvimento
-sudo apt install -y build-essential cmake git
+# Databases
+sudo apt -y install postgresql postgresql-contrib postgresql-server-dev-11
+sudo apt -y install sql
+
+# Redis
+curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor -o /usr/share/keyrings/redis-archive-keyring.gpg
+sudo chmod 644 /usr/share/keyrings/redis-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] https://packages.redis.io/deb $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/redis.list
+sudo apt-get update
+sudo apt-get install redis-stack-server
 
 # VSCode
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
