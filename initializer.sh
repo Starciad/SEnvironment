@@ -5,38 +5,38 @@ echo "Iniciando a configuração do ambiente Linux..."
 
 # =================================== #
 # General
-bash setups/setup_folders.sh
+bash general/setup_folders.sh
+bash general/setup_aliases.sh
 
 # =================================== #
 # Packages
 echo "Instalando aplicativos e codecs..."
 
 bash packages/update_system.sh
-bash packages/install_dev_tools.sh
-bash packages/install_desktop_environment.sh
-bash packages/install_media_codecs.sh
-bash packages/install_common_apps.sh
+bash packages/installation/dev_tools.sh
+bash packages/installation/desktop_environment.sh
+bash packages/installation/media_codecs.sh
+bash packages/installation/common_apps.sh
 
 # =================================== #
 # Developments
 echo "Configurando ambiente de desenvolvimento..."
 
-bash setups/setup_git.sh
-bash setups/setup_asdf.sh
+bash setups/development/git.sh
+bash setups/development/asdf.sh
 
 # =================================== #
 # Settings
 echo "Aplicando configurações gerais..."
 
-bash settings/configure_shell.sh
+bash settings/shell.sh
 
 # =================================== #
-# Scripts
+# System
 echo "Configurando o sistema..."
 
 bash system/configure_firewall.sh
 bash system/optimize_performance.sh
-bash system/setup_aliases.sh
 bash system/clean_system.sh
 
 # =================================== #
