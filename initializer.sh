@@ -4,7 +4,11 @@ cd ~
 echo "Iniciando a configuração do ambiente Linux..."
 
 # =================================== #
-# Chama scripts de pacotes
+# General
+bash setups/setup_folders.sh
+
+# =================================== #
+# Packages
 echo "Instalando aplicativos e codecs..."
 
 bash packages/update_system.sh
@@ -14,19 +18,20 @@ bash packages/install_media_codecs.sh
 bash packages/install_common_apps.sh
 
 # =================================== #
-# Chama scripts de desenvolvimento
+# Developments
 echo "Configurando ambiente de desenvolvimento..."
 
-bash development/setup_git.sh
+bash setups/setup_git.sh
+bash setups/setup_asdf.sh
 
 # =================================== #
-# Chama scripts de configurações
+# Settings
 echo "Aplicando configurações gerais..."
 
 bash settings/configure_shell.sh
 
 # =================================== #
-# Chama scripts do sistema
+# Scripts
 echo "Configurando o sistema..."
 
 bash system/configure_firewall.sh
@@ -37,5 +42,4 @@ bash system/clean_system.sh
 # =================================== #
 
 echo "Configuração do ambiente Linux concluída!"
-
 neofetch
