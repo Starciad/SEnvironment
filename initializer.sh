@@ -1,16 +1,20 @@
 #!/bin/bash
 
+# =================================== #
+# Starting
 cd ~
-echo "Iniciando a configuração do ambiente Linux..."
+echo "Starting to configure the Linux environment..."
 
 # =================================== #
 # General
-bash general/setup_folders.sh
-bash general/setup_aliases.sh
+echo "Starting general settings..."
+
+bash setups/general/folders.sh
+bash setups/general/aliases.sh
 
 # =================================== #
 # Packages
-echo "Instalando aplicativos e codecs..."
+echo "Installing packages..."
 
 bash packages/update_system.sh
 bash packages/installation/dev_tools.sh
@@ -20,20 +24,20 @@ bash packages/installation/common_apps.sh
 
 # =================================== #
 # Developments
-echo "Configurando ambiente de desenvolvimento..."
+echo "Configuring development environment..."
 
 bash setups/development/git.sh
 bash setups/development/asdf.sh
 
 # =================================== #
 # Settings
-echo "Aplicando configurações gerais..."
+echo "Applying general settings..."
 
 bash settings/shell.sh
 
 # =================================== #
 # System
-echo "Configurando o sistema..."
+echo "Configuring the system..."
 
 bash system/configure_firewall.sh
 bash system/optimize_performance.sh
@@ -41,5 +45,5 @@ bash system/clean_system.sh
 
 # =================================== #
 
-echo "Configuração do ambiente Linux concluída!"
+echo "The system configuration has been completed successfully!"
 neofetch
