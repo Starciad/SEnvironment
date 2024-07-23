@@ -1,12 +1,12 @@
 #!/bin/bash
 
-echo "Configurando diretórios..."
+echo "Configuring directories..."
 
-mkdir "Emulators";
-mkdir "Programs";
-mkdir "Games";
-mkdir "Tools";
-mkdir "Development";
-mkdir "Experiments";
+mkdir "~/Emulators";
+mkdir "~/Programs";
+mkdir "~/Games";
+mkdir "~/Tools";
+mkdir "~/Development";
+mkdir "~/Experiments";
 
-echo "Diretórios configurado!"
+echo "Directories configured!"

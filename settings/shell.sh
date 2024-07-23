@@ -1,12 +1,12 @@
 #!/bin/bash
 
-echo "Configurando shell..."
+echo "Configuring shell..."
 
-# Instala e configura o Zsh e o Oh My Zsh
+# Install and configure Zsh and Oh My Zsh
 sudo apt install -y zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# Define o Zsh como shell padrão
+# Set Zsh as default shell
 chsh -s $(which zsh)
 
-echo "Shell configurado!"
+echo "Shell configured!"

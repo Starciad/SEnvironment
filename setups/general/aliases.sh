@@ -1,13 +1,16 @@
 #!/bin/bash
 
-echo "Configurando aliases..."
+echo "Configuring aliases..."
 
-# Adiciona aliases ao bashrc
-echo "alias ll='ls -alF'" >> ~/.bashrc
-echo "alias la='ls -A'" >> ~/.bashrc
-echo "alias l='ls -CF'" >> ~/.bashrc
+# ================================== #
+# ALIASES
+# ================================== #
 
-# Carrega as novas aliases
+# Add aliases to .bashrc
+echo -e "\n# Custom aliases" >> ~/.bashrc
+# echo "alias {name}='{script}'" >> ~/.bashrc
+
+# Load the new aliases
 source ~/.bashrc
 
-echo "Aliases configurados!"
+echo "Configured aliases!"

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Configurando o ASDF"
+echo "Configuring ASDF..."
 
 # Plugins
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
@@ -47,4 +47,4 @@ asdf global lua latest
 asdf global dotnet latest
 asdf global java latest
 
-echo "ASDF configurado!"
+echo "ASDF configured!"

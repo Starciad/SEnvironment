@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Atualizando sistema..."
+echo "Updating system..."
 
 # Update
 sudo apt update
@@ -16,4 +16,4 @@ sudo ubuntu-drivers autoinstall
 # Interface
 sudo dpkg-reconfigure lightdm
 
-echo "Sistema atualizado!"
+echo "System updated!"

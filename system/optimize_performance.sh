@@ -1,15 +1,15 @@
 #!/bin/bash
 
-echo "Otimizando desempenho do sistema..."
+echo "Optimizing system performance..."
 
-# Ajusta swappiness
+# Adjusts swappiness
 sudo sysctl vm.swappiness=10
 
-# Ajusta cache pressure
+# Adjust cache pressure
 sudo sysctl vm.vfs_cache_pressure=50
 
-# Aplica mudanças permanentemente
+# Apply changes permanently
 echo "vm.swappiness=10" | sudo tee -a /etc/sysctl.conf
 echo "vm.vfs_cache_pressure=50" | sudo tee -a /etc/sysctl.conf
 
-echo "Desempenho do sistema otimizado!"
+echo "Optimized system performance!"

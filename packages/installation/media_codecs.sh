@@ -1,8 +1,7 @@
 #!/bin/bash
 
-echo "Instalando codecs de mídia..."
+echo "Installing media codecs..."
 
-# Instala codecs de mídia
 sudo apt install -y ubuntu-restricted-extras
 
-echo "Codecs de mídia instalados!"
+echo "Media codecs installed!"

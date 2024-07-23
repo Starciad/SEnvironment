@@ -1,8 +1,7 @@
 #!/bin/bash
 
-echo "Configurando ambiente de desktop..."
+echo "Configuring desktop environment..."
 
-# Instala o GNOME Tweaks e extensões comuns
 sudo apt install -y gnome-tweaks gnome-shell-extensions
 
-echo "Ambiente de desktop configurado!"
+echo "Desktop environment configured!"
